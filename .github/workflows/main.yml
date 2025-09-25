@@ -29,8 +29,9 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ steps.login-ecr.outputs.registry }}/development/recipeapp:${{ github.sha }} .
+          docker build -t ${{ secrets.REPO_NAME }} .
+          docker tag ${{ secrets.REPO_TAG }}
           
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ steps.login-ecr.outputs.registry }}/development/recipeapp:${{ github.sha }}
+          docker push ${{ secrets.REPO_PUSH }}
