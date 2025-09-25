@@ -1,5 +1,5 @@
 const API_BASE = "http://localhost:4000"; // backend server
-
+/*
 async function loadRecipes() {
   const res = await fetch(`${API_BASE}/recipes`);
   const data = await res.json();
@@ -30,3 +30,4 @@ document.getElementById("recipe-form").addEventListener("submit", async (e) => {
 });
 
 loadRecipes();
+*/

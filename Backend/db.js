@@ -1,4 +1,4 @@
-require("dotenv").config();
+/*require("dotenv").config();
 const mysql = require("mysql2/promise");
 
 const db = mysql.createPool({
@@ -25,3 +25,4 @@ async function init() {
 init();
 
 module.exports = db;
+*/
