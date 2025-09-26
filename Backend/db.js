@@ -1,5 +1,3 @@
-require("dotenv").config(); // Keep for local dev, harmless in ECS
-
 const mysql = require("mysql2/promise");
 
 const db = mysql.createPool({
