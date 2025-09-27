@@ -1,4 +1,4 @@
-const API_BASE = "http://recipeappalb-1875960180.us-east-1.elb.amazonaws.com"; // backend server
+const API_BASE = "http://you-app-ip.amazonaws.com"; // backend server
 
 async function loadRecipes() {
   const res = await fetch(`${API_BASE}/recipes`);
